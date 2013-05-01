@@ -1,0 +1,3 @@
+
+typedef ElemType *Triplet;
+
