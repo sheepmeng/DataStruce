@@ -1,7 +1,4 @@
 
-
-
-
 Status InitTriplet(Triplet &T, ElemType v1, ElemType v2, ElemType v3)
 {//操作结果：构造三元组T，依次置T的3个元素的初值为v1，v2，v3
 	if( !( T =( ElemType *)malloc(3 * sizeof(ElemType)) )  )
@@ -48,7 +45,6 @@ Status Put(Triplet &T, int i, ElemType e)
 	return OK;
 }
 
-
 Status IsAscending(Triplet T)
 {//初始条件：三元组T已存在 操作结果：如果T的三个元素按升序排列则返回1，否则返回0
 	return ((T[0] <= T[1]) && (T[1] <= T[2]) );
@@ -66,46 +62,9 @@ Status Max(Triplet T, ElemType &e)
 	return OK;
 }
 
-
 Status Min(Triplet T, ElemType &e)
 {
 	e = T[0]  <= T[1]?T[0]<=T[2]?T[0]:T[2]:T[1] <= T[2] ? T[1] : T[2];
 
 	return OK;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
